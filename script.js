@@ -40,8 +40,15 @@ function initialiseCounters() {
     removeButtons.forEach(button => {
         button.addEventListener('click', function() {
             const card = button.closest('.card');
-            card.remove();
-            updateCandidateHeaders();
+            const candidateName = card.querySelector('.candidate-name').textContent;
+            const votes = card.querySelector('.counter-value').textContent;
+            
+            const confirmRemoval = confirm(`Are you sure you want to remove this candidate's data?\n\nCandidate Name: ${candidateName}\nNo. of Votes: ${votes}`);
+
+            if (confirmRemoval) {
+                card.remove();
+                updateCandidateHeaders();
+            }
         });
     });
 
