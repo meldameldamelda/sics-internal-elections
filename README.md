@@ -6,4 +6,5 @@ click <a href='https://meldameldamelda.github.io/sics-internal-elections/'>here<
 <br>
 
 ## note
-be careful not to refresh the page before saving the data, as your data will be lost upon doing so.
+- be careful not to refresh the page before saving the data, as your data will be lost upon doing so.
+- this website was not built for mobile devices. it is only suitable for desktop view.
